@@ -85,10 +85,10 @@ public class JobTest {
     @Test
     public void testToStringMethodForBlankLines(){
         String jobString = test_Job3.toString();
-        String beginningJobString = jobString.substring(0, 7);
-        String endJobString = jobString.substring((jobString.length() - 7));
-        assertEquals("-------", beginningJobString);
-        assertEquals("-------", endJobString);
+        String beginningJobString = jobString.substring(0, 1);
+        String endJobString = jobString.substring(jobString.length() - 1);
+        assertEquals("\n", beginningJobString);
+        assertEquals("\n", endJobString);
     }
 
     @Test

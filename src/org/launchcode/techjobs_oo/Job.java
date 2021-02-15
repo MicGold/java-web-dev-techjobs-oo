@@ -99,38 +99,38 @@ public class Job {
 
     @Override
     public String toString() {
-        String jobString = "-------\n" +
+        String jobString = "\n" +
                 "ID:" + this.id + "\n";
 //        if(){
 //            //if(this.name == null && this.employer.getValue() == null && this.location.getValue() == null && this.positionType.getValue() == null && this.coreCompetency.getValue() == null){
 //            return "OOPS! This job does not seem to exist.";
 //        }
         if(this.name != null){
-            jobString += "Name:" + this.name + "\n";
+            jobString += "Name: " + this.name + "\n";
         }else{
             jobString += "Name: Data not available\n";
         }
         if(this.employer.getValue() != null){
-            jobString += "Employer:" + this.employer + "\n";
+            jobString += "Employer: " + this.employer + "\n";
         }else{
             jobString += "Employer: Data not available\n";
         }
         if(this.location.getValue() != null){
-            jobString += "Location:" + this.location + "\n";
+            jobString += "Location: " + this.location + "\n";
         }else{
             jobString += "Location: Data not available\n";
         }
         if(this.positionType.getValue() != null){
-            jobString += "Position Type:" + this.positionType + "\n";
+            jobString += "Position Type: " + this.positionType + "\n";
         }else{
             jobString += "Position Type: Data not available\n";
         }
         if(this.coreCompetency.getValue() != null){
-            jobString += "Core Competency:" + this.coreCompetency + "\n";
+            jobString += "Core Competency: " + this.coreCompetency + "\n";
         }else{
             jobString += "Core Competency: Data not available\n";
         }
-        jobString += "-------";
+        jobString += "\n";
         return jobString;
     }
 }
