@@ -105,30 +105,30 @@ public class Job {
 //            //if(this.name == null && this.employer.getValue() == null && this.location.getValue() == null && this.positionType.getValue() == null && this.coreCompetency.getValue() == null){
 //            return "OOPS! This job does not seem to exist.";
 //        }
-        if(this.name != null){
+        if(this.name != null  && this.name.length() > 0){
             jobString += "Name: " + this.name + "\n";
         }else{
-            jobString += "Name: Data not available\n";
+            jobString += "Name: **Data not available\n";
         }
-        if(this.employer.getValue() != null){
+        if(this.employer.getValue() != null && this.employer.getValue().length() > 0){
             jobString += "Employer: " + this.employer + "\n";
         }else{
-            jobString += "Employer: Data not available\n";
+            jobString += "Employer: **Data not available\n";
         }
-        if(this.location.getValue() != null){
+        if(this.location.getValue() != null && this.location.getValue().length() > 0){
             jobString += "Location: " + this.location + "\n";
         }else{
-            jobString += "Location: Data not available\n";
+            jobString += "Location: **Data not available\n";
         }
-        if(this.positionType.getValue() != null){
+        if(this.positionType.getValue() != null && this.positionType.getValue().length() > 0){
             jobString += "Position Type: " + this.positionType + "\n";
         }else{
-            jobString += "Position Type: Data not available\n";
+            jobString += "Position Type: **Data not available\n";
         }
-        if(this.coreCompetency.getValue() != null){
+        if(this.coreCompetency.getValue() != null && this.coreCompetency.getValue().length() > 0){
             jobString += "Core Competency: " + this.coreCompetency + "\n";
         }else{
-            jobString += "Core Competency: Data not available\n";
+            jobString += "Core Competency: **Data not available\n";
         }
         jobString += "\n";
         return jobString;
